@@ -1,0 +1,299 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  box-sizing: inherit;
+}
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Open+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@1,600&display=swap");
+
+:root {
+  /* set 1 */
+  --clr-one: #326789;
+  --clr-two: #79a5c8;
+  --clr-three: #e9eef4;
+  --clr-four: #e65c4f;
+
+  /* set 2 */
+  --clr-1: #dbdddd;
+  --clr-2: #e2b85c;
+  --clr-3: #818662;
+
+  /* set 3 */
+  --clr-i: #f14666;
+  --clr-ii: #ee8980;
+  --clr-iii: #ffcdaa;
+  --clr-iv: #9cb898;
+}
+body {
+  background-color: #f8fafd;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+nav {
+  text-align: center;
+  background-color: var(--clr-two);
+  padding: 0.5em 0;
+  color: white;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  opacity: 0.85;
+  z-index: 1000;
+}
+.header {
+  text-align: center;
+}
+.header h1 {
+  font-size: 40px;
+  font-family: "Amatic SC", cursive;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  padding: 1em 0;
+  color: #333;
+}
+.header > p {
+  font-family: "Amatic SC", cursive;
+  font-size: 25px;
+  margin-bottom: 3.5em;
+  font-weight: 600;
+  color: crimson;
+}
+.header img {
+  margin-bottom: 3em;
+}
+.rules {
+  text-align: left;
+}
+summary {
+  text-transform: uppercase;
+  line-height: 2.5;
+  font-weight: 600;
+}
+summary:focus {
+  outline: 0;
+}
+.rules p {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 0.7em;
+  color: #333;
+}
+.rules p span {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: crimson;
+}
+
+.wrapper {
+  margin-top: 3em;
+}
+/* phone mockup */
+/* The device with borders */
+.smartphone.phone-1 {
+  position: relative;
+  width: 320px;
+  height: 600px;
+  margin: auto;
+  border: 16px #202020 solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  margin-bottom: 40px;
+}
+.smartphone.phone-2 {
+  position: relative;
+  width: 320px;
+  height: 600px;
+  margin: auto;
+  border: 16px #ba0c2f solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  margin-bottom: 40px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone.phone-1:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+.smartphone.phone-2:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--clr-ii);
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone.phone-1:after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+.smartphone.phone-2:after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: var(--clr-ii);
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+/* contents */
+.items {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.items h1 {
+  font-family: "Fraunces", serif;
+  text-align: center;
+  padding: 0.7em 0;
+}
+.items.one h1 {
+  color: #394955;
+}
+.items.two h1 {
+  /* color:  #d34c41; */
+  color: #926466;
+}
+.game {
+  display: grid;
+  place-items: center;
+  height: 70%;
+  position: relative;
+}
+.game p {
+  font-size: 1.15rem;
+  text-align: center;
+  padding: 0 15px;
+  position: absolute;
+  z-index: 999;
+  top: 32%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  color: #333;
+}
+.blob {
+  transform: scale(1.25);
+  position: relative;
+  bottom: 15px;
+}
+.truth p {
+  color: #fff;
+}
+.items .play-btn button {
+  font-size: 0.95rem;
+  width: 55%;
+  padding: 0.7em 0;
+  position: absolute;
+  bottom: 22px;
+  left: 25%;
+  transform: translateX(-5%);
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-radius: 5px;
+}
+.items .play-btn button:focus {
+  outline: 0;
+}
+.items .play-btn .truth-btn {
+  background-color: #394955;
+  color: #fff;
+  transition: transform 0.4s ease;
+}
+.items .play-btn .dare-btn {
+  background-color: #926466;
+  color: #fff;
+}
+.items .play-btn .truth-btn:hover {
+  opacity: 0.8;
+}
+.items .play-btn .dare-btn:hover {
+  opacity: 0.8;
+}
+/* fade up animation */
+.animate {
+  animation-name: fade-up;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+@keyframes fade-up {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .header h1 {
+    font-size: 55px;
+  }
+  .header > p {
+    font-size: 35px;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  summary {
+    font-size: 25px;
+  }
+  .rules p {
+    font-size: 22px;
+  }
+}

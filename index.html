@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truth or Dare Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>This is a fun project created by Que!!!</nav>
+      <div class="header container">
+        <h1>looking for something to spice up your day?</h1>
+        <p>Okay let's play 😎,</p>
+        <img src="./Images/truth-or-dare.png" alt="truth-or-dare" />
+        <details class="rules">
+          <summary class="rules-heading">some general rules:</summary>
+          <p>
+            The rules of this game is pretty simple, you present someone with
+            two options: <span>truth</span> or <span>dare</span> and they get to
+            choose.
+          </p>
+          <p>
+            <span>Truth</span> means you ask someone any question and they get to answer honestly.
+          </p>
+          <p><span>Dare</span> means you give someone somethingto do, to take action on.</p>
+        </details>
+      </div>
+    </header>
+
+    <div class="wrapper container">
+      <!-- truth -->
+      <div class="smartphone phone-1">
+        <div class="content">
+            <div class="items one">
+                <h1>Truth</h1>
+                <div class="game truth">
+                    <p class="truth-question">speak the truth</p>
+                    <img class="blob blob-1" src="./Images/blob_1.svg" alt="blob">
+                </div>
+                <div class="play-btn">
+                    <button class="btn truth-btn" type="button">play</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- dare -->
+      <div class="smartphone phone-2">
+        <div class="content">
+            <div class="items two">
+                <h1>Dare</h1>
+                <div class="game truth">
+                    <p class="dare-question">do the dare</p>
+                    <img class="blob" src="./Images/blob_2.svg" alt="blob">
+                </div>
+                <div class="play-btn">
+                    <button class="btn dare-btn" type="button">play</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="app.js"></script>
+  </body>
+</html>
