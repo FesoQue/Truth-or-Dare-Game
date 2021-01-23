@@ -178,18 +178,31 @@ button.forEach((btn)=> {
        if(click && btnClassName === 'btn truth-btn') {
         const randomText = randomTruthQuestion()
         truthText.textContent = truth[randomText].text
-       } else {
-           truthText.textContent = 'speak the truth'
-       }
+       } 
+    //    else {
+    //        truthText.textContent = 'speak the truth'
+    //    }
 
        if(click && btnClassName === 'btn dare-btn') {
         const randomText = randomTruthQuestion()
         dareText.textContent = dare[randomText].text
-       } else {
-           dareText.textContent = 'Do The Dare'
-       }
+       } 
+    //    else {
+    //        dareText.textContent = 'Do The Dare'
+    //    }   
     })
 })
+const body = document.querySelector('body');
+body.addEventListener('click', (e)=> {
+    const btnClassName = e.target.className;
+    if(btnClassName != 'btn truth-btn') {
+        truthText.textContent = 'speak the truth'
+    } 
+    if(btnClassName != 'btn dare-btn') {
+        dareText.textContent = 'Do The Dare'
+    } 
+})
+
 // get random number in order to display random text
 function randomTruthQuestion() {
   return Math.floor(Math.random() * truth.length);
